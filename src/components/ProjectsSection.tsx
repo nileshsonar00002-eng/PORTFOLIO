@@ -36,8 +36,8 @@ export const ProjectsSection: React.FC = () => {
           </p>
         </div>
 
-        {/* 4 Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+        {/* 3 Projects Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {projects.map((project) => (
             <ProjectCard
               key={project.id}

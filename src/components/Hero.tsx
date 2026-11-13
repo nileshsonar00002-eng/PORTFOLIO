@@ -1,7 +1,7 @@
 import React from 'react'
 import { personalInfo, socialLinks } from '../data/portfolioData'
 import { SocialIcon } from './SocialIcons'
-import { ArrowRight, Terminal } from 'lucide-react'
+import { ArrowRight, Terminal, CheckCircle2, Shield, Cpu, Activity } from 'lucide-react'
 
 export const Hero: React.FC = () => {
   const scrollTo = (id: string) => {
@@ -15,7 +15,7 @@ export const Hero: React.FC = () => {
     <section
       id="home"
       aria-label="Introduction and Overview"
-      className="relative min-h-[92vh] flex items-center pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden border-b border-[#292929]"
+      className="relative min-h-[88vh] flex items-center pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden border-b border-[#292929]"
     >
       {/* Background Architectural Grid Lines */}
       <div
@@ -35,7 +35,7 @@ export const Hero: React.FC = () => {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
           
           {/* LEFT COLUMN: Narrative & Call to Action */}
           <div className="lg:col-span-7 flex flex-col items-start space-y-6 lg:space-y-8">
@@ -87,7 +87,7 @@ export const Hero: React.FC = () => {
               </button>
             </div>
 
-            {/* Social Icons Bar (Subtle, Clean) */}
+            {/* Social Icons Bar (Subtle, Clean — GitHub & LinkedIn only) */}
             <div className="pt-4 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 border-t border-[#292929]/70 w-full">
               <span className="text-xs font-mono uppercase tracking-widest text-[#77736D]">
                 Connect
@@ -100,9 +100,10 @@ export const Hero: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={social.ariaLabel}
-                    className="p-2.5 rounded-md bg-[#181818] border border-[#292929] text-[#A7A29A] hover:text-[#C47B52] hover:border-[#C47B52]/40 hover:bg-[#1E1C1A] transition-all focus-visible:ring-2 focus-visible:ring-[#C47B52]"
+                    className="inline-flex items-center space-x-2 px-3 py-2 rounded-md bg-[#181818] border border-[#292929] text-[#A7A29A] hover:text-[#C47B52] hover:border-[#C47B52]/40 hover:bg-[#1E1C1A] transition-all focus-visible:ring-2 focus-visible:ring-[#C47B52]"
                   >
                     <SocialIcon type={social.icon} className="w-4 h-4" />
+                    <span className="text-xs font-medium">{social.name}</span>
                   </a>
                 ))}
               </div>
@@ -110,53 +111,78 @@ export const Hero: React.FC = () => {
 
           </div>
 
-          {/* RIGHT COLUMN: Professional Portrait Area */}
-          <div className="lg:col-span-5 flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-[420px] aspect-[4/5] sm:aspect-[5/6] rounded-xl overflow-hidden group">
+          {/* RIGHT COLUMN: Minimal Engineering Console & System Architecture Spec (Face removed) */}
+          <div className="lg:col-span-5 flex justify-center lg:justify-end w-full">
+            <div className="w-full max-w-[460px] bg-[#141414] rounded-xl border border-[#292929] shadow-2xl overflow-hidden group hover:border-[#383838] transition-all duration-300">
               
-              {/* Subtle Copper Architectural Geometric Ring Accent Behind Portrait */}
-              <div
-                className="absolute -inset-4 rounded-2xl border border-[#C47B52]/20 opacity-70 pointer-events-none group-hover:border-[#C47B52]/40 transition-colors"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute -top-10 -right-10 w-44 h-44 rounded-full border border-[#C47B52]/15 pointer-events-none"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute -bottom-10 -left-10 w-36 h-36 rounded-full border border-[#292929] pointer-events-none"
-                aria-hidden="true"
-              />
+              {/* Console Window Header */}
+              <div className="flex items-center justify-between px-4 py-3 bg-[#181818] border-b border-[#292929]">
+                <div className="flex items-center space-x-2">
+                  <span className="w-3 h-3 rounded-full bg-[#292929] group-hover:bg-[#C47B52]/70 transition-colors" />
+                  <span className="w-3 h-3 rounded-full bg-[#242424]" />
+                  <span className="w-3 h-3 rounded-full bg-[#242424]" />
+                </div>
+                <div className="flex items-center space-x-1.5 font-mono text-[11px] text-[#77736D]">
+                  <Terminal className="w-3.5 h-3.5 text-[#C47B52]" />
+                  <span>nilesh@devops-node ~</span>
+                </div>
+                <span className="text-[10px] font-mono text-[#C47B52] uppercase font-semibold">
+                  ACTIVE
+                </span>
+              </div>
 
-              {/* Portrait Container Card */}
-              <div className="relative w-full h-full bg-[#141414] rounded-xl border border-[#292929] overflow-hidden shadow-2xl transition-all duration-300">
+              {/* Console Body / Telemetry */}
+              <div className="p-5 sm:p-6 font-mono text-xs space-y-4">
                 
-                {/* Developer Portrait Image (Easily replaceable via portfolioData.personalInfo.portraitImage) */}
-                <img
-                  src={personalInfo.portraitImage}
-                  alt={personalInfo.portraitAlt}
-                  loading="eager"
-                  className="w-full h-full object-cover object-center filter grayscale-[10%] group-hover:grayscale-0 group-hover:scale-[1.02] transition-all duration-500"
-                />
-
-                {/* Subtle vignette gradient overlay */}
-                <div
-                  className="absolute inset-0 bg-gradient-to-t from-[#0D0D0D] via-transparent to-transparent opacity-80 pointer-events-none"
-                  aria-hidden="true"
-                />
-
-                {/* Bottom Overlay Label */}
-                <div className="absolute bottom-4 left-4 right-4 p-3 rounded-lg bg-[#141414]/90 backdrop-blur-md border border-[#292929] flex items-center justify-between">
-                  <div className="flex items-center space-x-2.5">
-                    <span className="w-2 h-2 rounded-full bg-[#C47B52] animate-pulse" />
-                    <span className="text-xs font-medium text-[#F4F1EA]">
-                      {personalInfo.name}
-                    </span>
+                {/* Command 1: Identity */}
+                <div>
+                  <div className="flex items-center space-x-2 text-[#A7A29A]">
+                    <span className="text-[#C47B52] font-bold">$</span>
+                    <span>whoami</span>
                   </div>
-                  <div className="flex items-center space-x-1.5 font-mono text-[11px] text-[#A7A29A]">
-                    <Terminal className="w-3 h-3 text-[#C47B52]" />
-                    <span>DevOps &amp; Web</span>
+                  <div className="mt-1 pl-4 text-[#F4F1EA] text-[13px] font-semibold">
+                    nilesh_bagul <span className="text-[#77736D] font-normal text-xs">(Aspiring DevOps Engineer)</span>
                   </div>
+                </div>
+
+                {/* Command 2: Stack & Architecture */}
+                <div>
+                  <div className="flex items-center space-x-2 text-[#A7A29A]">
+                    <span className="text-[#C47B52] font-bold">$</span>
+                    <span>system.get_stack()</span>
+                  </div>
+                  <div className="mt-2 pl-4 grid grid-cols-2 gap-2 text-[#A7A29A]">
+                    <div className="p-2 rounded bg-[#181818] border border-[#242424] flex items-center space-x-2">
+                      <Cpu className="w-3.5 h-3.5 text-[#C47B52]" />
+                      <span className="text-[#F4F1EA] text-[11px]">React + TS</span>
+                    </div>
+                    <div className="p-2 rounded bg-[#181818] border border-[#242424] flex items-center space-x-2">
+                      <Shield className="w-3.5 h-3.5 text-[#C47B52]" />
+                      <span className="text-[#F4F1EA] text-[11px]">Cloud &amp; Firebase</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Command 3: Deployment Pipeline Status */}
+                <div>
+                  <div className="flex items-center space-x-2 text-[#A7A29A]">
+                    <span className="text-[#C47B52] font-bold">$</span>
+                    <span>deploy.status</span>
+                  </div>
+                  <div className="mt-1.5 pl-4 flex items-center space-x-2 text-[#F4F1EA]">
+                    <Activity className="w-3.5 h-3.5 text-[#C47B52]" />
+                    <span className="text-xs text-[#A7A29A]">Pipelines:</span>
+                    <span className="text-xs font-semibold text-[#F4F1EA]">Vercel / Edge Verified</span>
+                  </div>
+                </div>
+
+                {/* Status Footer Inside Console */}
+                <div className="pt-3 border-t border-[#242424] flex items-center justify-between text-[11px] text-[#77736D]">
+                  <span className="flex items-center space-x-1.5">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#C47B52]" />
+                    <span className="text-[#A7A29A]">Open to Projects</span>
+                  </span>
+                  <span className="text-[#C47B52]">LATENCY: ~18ms</span>
                 </div>
 
               </div>

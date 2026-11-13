@@ -25,8 +25,8 @@ export const personalInfo: PersonalInfo = {
   ],
   // Configurable email address (safe from raw scraper harvesting)
   email: 'nileshbagul.dev@gmail.com',
-  portraitImage: '/images/portrait.svg',
-  portraitAlt: 'Portrait of Nilesh Bagul — Aspiring DevOps Engineer and AI-assisted Developer',
+  portraitImage: '',
+  portraitAlt: 'Nilesh Bagul — Aspiring DevOps Engineer and AI-assisted Developer',
   location: 'India',
   availability: 'Open to Opportunities',
 }
@@ -44,23 +44,11 @@ export const socialLinks: SocialLink[] = [
     ariaLabel: 'Nilesh Bagul on LinkedIn (opens in new tab)',
     icon: 'linkedin',
   },
-  {
-    name: 'YouTube',
-    url: 'https://youtube.com/@nileshbagul',
-    ariaLabel: 'Nilesh Bagul on YouTube (opens in new tab)',
-    icon: 'youtube',
-  },
-  {
-    name: 'X',
-    url: 'https://x.com/nileshbagul',
-    ariaLabel: 'Nilesh Bagul on X (opens in new tab)',
-    icon: 'x',
-  },
 ]
 
 export const stats: StatItem[] = [
   {
-    value: '04+',
+    value: '03+',
     label: 'Projects',
     sublabel: 'Shipped & Maintained',
   },
@@ -136,25 +124,6 @@ export const projects: Project[] = [
       'Real-time financial savings calculator based on custom consumption metrics',
       'AI-assisted motivational prompts and craving relapse intervention tips',
       'Cross-device authentication and profile persistence via Firebase Auth & Firestore'
-    ],
-    featured: true,
-  },
-  {
-    id: 'news-platform',
-    title: 'News Platform',
-    category: 'Digital Publishing',
-    description: 'A multilingual news platform concept designed for mobile-first content publishing and management.',
-    longDescription: 'News Platform is an editorial publishing system built for fast, accessible local news distribution. Designed with a mobile-first philosophy, it enables rapid story drafting, instant multilingual translation, category tagging, and lightweight reading experiences even on low-bandwidth networks.',
-    image: '/images/news.svg',
-    imageAlt: 'Multilingual news publishing platform visual interface',
-    technologies: ['React', 'Firebase', 'CMS', 'Multilingual'],
-    liveUrl: 'https://news-platform-demo.web.app',
-    githubUrl: 'https://github.com/nileshbagul/news-platform',
-    highlights: [
-      'Instant language switching between regional languages and English',
-      'Lightweight editorial CMS for content creators with draft & publish workflows',
-      'Sub-second article rendering optimized for mobile readers on mobile networks',
-      'Clean editorial grid layout adhering to accessibility and contrast guidelines'
     ],
     featured: true,
   },
