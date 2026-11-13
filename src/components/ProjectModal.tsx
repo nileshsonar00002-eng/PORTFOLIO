@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import type { Project } from '../types/portfolio'
 import { X, ExternalLink, CheckCircle2, Layers } from 'lucide-react'
 import { SocialIcon } from './SocialIcons'
+import { TechIcon } from './TechIcon'
 
 interface ProjectModalProps {
   project: Project | null
@@ -105,9 +106,10 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
             {project.technologies.map((tech) => (
               <span
                 key={tech}
-                className="px-3 py-1 rounded text-xs font-mono bg-[#181818] border border-[#292929] text-[#F4F1EA]"
+                className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded text-xs font-mono bg-[#181818] border border-[#292929] text-[#F4F1EA]"
               >
-                {tech}
+                <TechIcon name={tech} className="w-3.5 h-3.5 flex-shrink-0" />
+                <span>{tech}</span>
               </span>
             ))}
           </div>

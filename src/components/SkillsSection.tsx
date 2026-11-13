@@ -1,6 +1,7 @@
 import React from 'react'
 import { skillCategories } from '../data/portfolioData'
 import { Code2, Cloud, Cpu, Compass } from 'lucide-react'
+import { TechIcon } from './TechIcon'
 
 export const SkillsSection: React.FC = () => {
   const getCategoryIcon = (iconName: string) => {
@@ -76,16 +77,16 @@ export const SkillsSection: React.FC = () => {
                 )}
               </div>
 
-              {/* Skills Badges */}
-              <div className="flex flex-wrap gap-2 pt-2 border-t border-[#242424]">
+              {/* Skills Badges with Official Brand Icons */}
+              <div className="flex flex-wrap gap-2.5 pt-3 border-t border-[#242424]">
                 {category.skills.map((skill) => (
-                  <span
+                  <div
                     key={skill}
-                    className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-md text-xs font-medium text-[#F4F1EA] bg-[#141414] border border-[#292929] group-hover:border-[#333333] transition-colors"
+                    className="inline-flex items-center space-x-2.5 px-3.5 py-2 rounded-lg text-xs font-medium text-[#F4F1EA] bg-[#141414] border border-[#292929] hover:border-[#C47B52]/50 hover:bg-[#1A1816] transition-all group/badge"
                   >
-                    <span className="w-1 h-1 rounded-full bg-[#C47B52]" aria-hidden="true" />
-                    <span>{skill}</span>
-                  </span>
+                    <TechIcon name={skill} className="w-4 h-4 flex-shrink-0 transition-transform group-hover/badge:scale-110" />
+                    <span className="tracking-wide">{skill}</span>
+                  </div>
                 ))}
               </div>
             </div>
