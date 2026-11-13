@@ -148,12 +148,6 @@ export const skillCategories: SkillCategory[] = [
     skills: ['Antigravity', 'Gemini', 'ChatGPT', 'Claude'],
     note: 'Advanced prompt architecture, AI-assisted coding, automated scaffolding, and workflow optimization.'
   },
-  {
-    category: 'Currently Learning',
-    iconName: 'Compass',
-    skills: ['Linux', 'DevOps', 'Cloud Infrastructure'],
-    note: 'Bash scripting, containerization, CI/CD pipelines, and infrastructure as code principles.'
-  },
 ]
 
 export const processSteps: ProcessStep[] = [
