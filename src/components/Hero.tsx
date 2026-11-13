@@ -37,14 +37,6 @@ export const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         <div className="max-w-4xl flex flex-col items-start space-y-7 lg:space-y-9">
           
-          {/* Small Badge */}
-          <div className="inline-flex items-center space-x-2.5 px-3 py-1.5 rounded-md bg-[#181818] border border-[#292929]">
-            <span className="w-2 h-2 rounded-full bg-[#C47B52]" aria-hidden="true" />
-            <span className="font-mono text-xs uppercase tracking-widest text-[#A7A29A] font-semibold">
-              {personalInfo.badge}
-            </span>
-          </div>
-
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-[#F4F1EA] leading-[1.12]">
             I build digital products <br className="hidden sm:inline" />

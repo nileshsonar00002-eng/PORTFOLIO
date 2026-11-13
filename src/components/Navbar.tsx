@@ -96,39 +96,39 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
             </div>
           </a>
 
-          {/* Desktop Navigation Links */}
-          <nav aria-label="Primary" className="hidden md:flex items-center space-x-1 lg:space-x-2">
-            {navLinks.map((link) => {
-              const sectionId = link.href.replace('#', '')
-              const isActive = activeSection === sectionId
+          {/* Desktop Right Navigation & CTA Container */}
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
+            <nav aria-label="Primary" className="flex items-center space-x-1 lg:space-x-2">
+              {navLinks.map((link) => {
+                const sectionId = link.href.replace('#', '')
+                const isActive = activeSection === sectionId
 
-              return (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  onClick={(e) => {
-                    e.preventDefault()
-                    handleNavClick(link.href)
-                  }}
-                  className={`px-3.5 py-1.5 rounded-md text-sm font-medium transition-colors ${
-                    isActive
-                      ? 'text-[#F4F1EA] bg-[#181818] border border-[#292929]'
-                      : 'text-[#A7A29A] hover:text-[#F4F1EA] hover:bg-[#141414]'
-                  }`}
-                >
-                  <span className="flex items-center space-x-1.5">
-                    {isActive && (
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#C47B52]" aria-hidden="true" />
-                    )}
-                    <span>{link.name}</span>
-                  </span>
-                </a>
-              )
-            })}
-          </nav>
+                return (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    onClick={(e) => {
+                      e.preventDefault()
+                      handleNavClick(link.href)
+                    }}
+                    className={`px-3.5 py-1.5 rounded-md text-sm font-medium transition-colors ${
+                      isActive
+                        ? 'text-[#F4F1EA] bg-[#181818] border border-[#292929]'
+                        : 'text-[#A7A29A] hover:text-[#F4F1EA] hover:bg-[#141414]'
+                    }`}
+                  >
+                    <span className="flex items-center space-x-1.5">
+                      {isActive && (
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#C47B52]" aria-hidden="true" />
+                      )}
+                      <span>{link.name}</span>
+                    </span>
+                  </a>
+                )
+              })}
+            </nav>
 
-          {/* Desktop Right CTA */}
-          <div className="hidden md:flex items-center">
+            {/* Desktop Right CTA */}
             <button
               type="button"
               onClick={onOpenContact}
