@@ -15,7 +15,7 @@ export function App() {
   const [contactModalOpen, setContactModalOpen] = useState(false)
 
   return (
-    <div className="min-h-screen bg-[#0D0D0D] text-[#F4F1EA] flex flex-col font-sans selection:bg-[#C47B52]/30 selection:text-[#FFFFFF]">
+    <div className="min-h-screen bg-[var(--bg-base)] text-[var(--text-primary)] flex flex-col font-sans selection:bg-[#C47B52]/30 selection:text-[#FFFFFF]">
       {/* Accessibility Skip Link */}
       <SkipLink />
 

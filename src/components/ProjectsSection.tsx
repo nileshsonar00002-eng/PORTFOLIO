@@ -11,27 +11,27 @@ export const ProjectsSection: React.FC = () => {
     <section
       id="projects"
       aria-labelledby="projects-heading"
-      className="py-20 lg:py-28 bg-[#0D0D0D] border-b border-[#292929]"
+      className="py-20 lg:py-28 bg-[var(--bg-base)] border-b border-[var(--border-subtle)] transition-colors"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="flex flex-col items-start mb-12 sm:mb-16">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded bg-[#181818] border border-[#292929] mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#C47B52]" aria-hidden="true" />
-            <span className="font-mono text-xs uppercase tracking-widest text-[#A7A29A]">
+          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded bg-[var(--bg-card)] border border-[var(--border-subtle)] mb-4 shadow-xs">
+            <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent-copper)]" aria-hidden="true" />
+            <span className="font-mono text-xs uppercase tracking-widest text-[var(--text-secondary)]">
               Portfolio
             </span>
           </div>
 
           <h2
             id="projects-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#F4F1EA] mb-3"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[var(--text-primary)] mb-3"
           >
             Selected Projects
           </h2>
 
-          <p className="text-base sm:text-lg text-[#A7A29A] max-w-2xl">
+          <p className="text-base sm:text-lg text-[var(--text-secondary)] max-w-2xl">
             A collection of digital products and platforms I've built.
           </p>
         </div>

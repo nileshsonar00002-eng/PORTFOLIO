@@ -1,58 +1,83 @@
 @import "tailwindcss";
 
-@theme {
-  --color-bg-base: #0D0D0D;
-  --color-bg-surface: #141414;
-  --color-bg-card: #181818;
-  --color-text-primary: #F4F1EA;
-  --color-text-secondary: #A7A29A;
-  --color-text-muted: #77736D;
-  --color-border-subtle: #292929;
-  --color-accent-copper: #C47B52;
-  --color-accent-hover: #D28A5C;
+:root {
+  --bg-base: #FFFFFF;
+  --bg-surface: #F9F7F4;
+  --bg-card: #FFFFFF;
+  --bg-elevated: #F2ECE3;
+  --bg-hover: #F6F1EA;
+  --text-primary: #151413;
+  --text-secondary: #575149;
+  --text-muted: #887F74;
+  --border-subtle: #E6E0D6;
+  --border-hover: #D0C7BB;
+  --accent-copper: #B8673B;
+  --accent-hover: #A0552B;
+  --nav-bg: rgba(255, 255, 255, 0.92);
+  --modal-bg: #FFFFFF;
+  --modal-overlay: rgba(20, 19, 18, 0.55);
+  --card-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
   --font-sans: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color-scheme: light;
 }
 
-:root {
+html.dark {
+  --bg-base: #0D0D0D;
+  --bg-surface: #141414;
+  --bg-card: #181818;
+  --bg-elevated: #1F1F1F;
+  --bg-hover: #1E1C1A;
+  --text-primary: #F4F1EA;
+  --text-secondary: #A7A29A;
+  --text-muted: #77736D;
+  --border-subtle: #292929;
+  --border-hover: #403B37;
+  --accent-copper: #C47B52;
+  --accent-hover: #D28A5C;
+  --nav-bg: rgba(13, 13, 13, 0.92);
+  --modal-bg: #141414;
+  --modal-overlay: rgba(0, 0, 0, 0.85);
+  --card-shadow: 0 10px 30px -4px rgba(0, 0, 0, 0.5);
   color-scheme: dark;
 }
 
 html {
   scroll-behavior: smooth;
-  background-color: #0D0D0D;
-  color: #F4F1EA;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
   font-family: var(--font-sans);
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #0D0D0D;
-  color: #F4F1EA;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Custom scrollbar matching dark luxury theme */
+/* Custom scrollbar matching theme */
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #0D0D0D;
+  background: var(--bg-base);
 }
 ::-webkit-scrollbar-thumb {
-  background: #292929;
+  background: var(--border-subtle);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #C47B52;
+  background: var(--accent-copper);
 }
 
 /* Focus styles for accessibility */
 :focus-visible {
-  outline: 2px solid #C47B52;
+  outline: 2px solid var(--accent-copper);
   outline-offset: 3px;
 }
 

@@ -4,8 +4,25 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0D0D0D" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#FFFFFF" />
     
+    <!-- FOUC Prevention Script (Defaults to Light Theme) -->
+    <script>
+      (function() {
+        try {
+          var t = localStorage.getItem('portfolio-theme');
+          if (t === 'dark') {
+            document.documentElement.classList.add('dark');
+            document.documentElement.setAttribute('data-theme', 'dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.setAttribute('data-theme', 'light');
+          }
+        } catch(e) {}
+      })();
+    </script>
+
     <!-- Primary Meta Tags -->
     <title>Nilesh Bagul &mdash; Aspiring DevOps Engineer &amp; AI-assisted Developer</title>
     <meta name="title" content="Nilesh Bagul &mdash; Aspiring DevOps Engineer &amp; AI-assisted Developer" />
@@ -33,7 +50,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
-  <body class="bg-[#0D0D0D] text-[#F4F1EA] antialiased selection:bg-[#C47B52]/30 selection:text-[#FFFFFF]">
+  <body class="bg-[var(--bg-base)] text-[var(--text-primary)] antialiased selection:bg-[#C47B52]/30 selection:text-[#FFFFFF] transition-colors duration-200">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
