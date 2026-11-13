@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <radialGradient id="quitzzGlow" cx="60%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#C47B52" stop-opacity="0.12" />
+      <stop offset="60%" stop-color="#141414" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0E0E0E" stop-opacity="1" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="500" fill="url(#quitzzGlow)" />
+  <rect width="800" height="500" fill="none" stroke="#292929" stroke-width="1.5" />
+
+  <!-- App Header Bar -->
+  <g transform="translate(40, 36)">
+    <rect width="230" height="54" rx="8" fill="#141414" stroke="#292929" stroke-width="1" />
+    <circle cx="20" cy="27" r="4" fill="#C47B52" />
+    <text x="34" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#F4F1EA" letter-spacing="0.5">QUITZZ LIFESTYLE</text>
+    <text x="34" y="40" font-family="'Plus Jakarta Sans', monospace" font-size="10" fill="#A7A29A">SMOKE-FREE COMPANION</text>
+  </g>
+
+  <!-- Central Radial Progress Display -->
+  <g transform="translate(400, 240)">
+    <!-- Outer Track -->
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#222222" stroke-width="10" />
+    <!-- Active Progress Arc in Warm Copper (approx 75% complete streak milestone) -->
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#C47B52" stroke-width="10" stroke-dasharray="754" stroke-dashoffset="180" stroke-linecap="round" transform="rotate(-90)" />
+    <!-- Inner subtle ring -->
+    <circle cx="0" cy="0" r="96" fill="#141414" stroke="#292929" stroke-width="1" />
+    
+    <!-- Central Counter -->
+    <text x="0" y="-15" font-family="'Plus Jakarta Sans', sans-serif" font-size="44" font-weight="800" fill="#F4F1EA" text-anchor="middle" letter-spacing="-1">45</text>
+    <text x="0" y="12" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" fill="#C47B52" text-anchor="middle" letter-spacing="1">DAYS SMOKE FREE</text>
+    <text x="0" y="32" font-family="'Plus Jakarta Sans', monospace" font-size="10" fill="#77736D" text-anchor="middle">STREAK MILESTONE 3</text>
+  </g>
+
+  <!-- Left Stats Card: Health Recovery Timeline -->
+  <g transform="translate(60, 140)">
+    <rect width="200" height="240" rx="8" fill="#141414" stroke="#292929" stroke-width="1" />
+    <text x="20" y="30" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#F4F1EA">PHYSIOLOGICAL RECOVERY</text>
+    
+    <!-- Item 1 -->
+    <g transform="translate(20, 50)">
+      <circle cx="6" cy="6" r="3" fill="#C47B52" />
+      <text x="18" y="9" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#A7A29A">Oxygen &amp; Pulse Normal</text>
+      <text x="18" y="24" font-family="'Plus Jakarta Sans', monospace" font-size="10" fill="#C47B52">100% RESTORED</text>
+    </g>
+
+    <!-- Item 2 -->
+    <g transform="translate(20, 105)">
+      <circle cx="6" cy="6" r="3" fill="#C47B52" />
+      <text x="18" y="9" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#A7A29A">Carbon Monoxide Cleared</text>
+      <text x="18" y="24" font-family="'Plus Jakarta Sans', monospace" font-size="10" fill="#C47B52">100% RESTORED</text>
+    </g>
+
+    <!-- Item 3 -->
+    <g transform="translate(20, 160)">
+      <circle cx="6" cy="6" r="3" fill="#D28A5C" />
+      <text x="18" y="9" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#A7A29A">Lung Capacity Boost</text>
+      <text x="18" y="24" font-family="'Plus Jakarta Sans', monospace" font-size="10" fill="#A7A29A">82% PROGRESS</text>
+    </g>
+  </g>
+
+  <!-- Right Stats Card: Financial Metrics -->
+  <g transform="translate(540, 140)">
+    <rect width="200" height="240" rx="8" fill="#141414" stroke="#292929" stroke-width="1" />
+    <text x="20" y="30" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#F4F1EA">SAVINGS CALCULATOR</text>
+    
+    <text x="20" y="70" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#77736D">ESTIMATED CAPITAL SAVED</text>
+    <text x="20" y="105" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#F4F1EA">₹13,500</text>
+
+    <line x1="20" y1="130" x2="180" y2="130" stroke="#292929" stroke-width="1" />
+
+    <text x="20" y="155" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#77736D">CIGARETTES AVOIDED</text>
+    <text x="20" y="185" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="700" fill="#C47B52">900 <tspan font-size="12" fill="#A7A29A" font-weight="400">units</tspan></text>
+
+    <text x="20" y="215" font-family="'Plus Jakarta Sans', monospace" font-size="10" fill="#77736D">AI MOTIVATION ACTIVE</text>
+  </g>
+
+  <!-- Bottom Interactive Status Bar -->
+  <g transform="translate(40, 420)">
+    <rect width="720" height="42" rx="8" fill="#141414" stroke="#292929" stroke-width="1" />
+    <text x="20" y="26" font-family="'Plus Jakarta Sans', monospace" font-size="11" fill="#A7A29A">INTERACTIVE HABIT TRACKING // JAVASCRIPT &amp; FIREBASE STACK</text>
+    <text x="700" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#C47B52" font-weight="600" text-anchor="end">APP UI PREVIEW</text>
+  </g>
+</svg>

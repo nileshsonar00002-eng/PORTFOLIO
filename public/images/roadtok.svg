@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <radialGradient id="roadGlow" cx="40%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#C47B52" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#141414" stop-opacity="1" />
+    </radialGradient>
+    <linearGradient id="roadLine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C47B52" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#C47B52" stop-opacity="0.1" />
+    </linearGradient>
+    <pattern id="roadGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#222222" stroke-width="0.8" />
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="500" fill="#121212" />
+  <rect width="800" height="500" fill="url(#roadGlow)" />
+  <rect width="800" height="500" fill="url(#roadGrid)" />
+
+  <!-- Road Simulation / Highway Perspective -->
+  <g transform="translate(100, 40)">
+    <!-- Road Surface Perspective -->
+    <polygon points="120,420 220,140 380,140 480,420" fill="#181818" stroke="#292929" stroke-width="1.5" />
+    <!-- Shoulder Lines -->
+    <line x1="120" y1="420" x2="220" y2="140" stroke="#C47B52" stroke-width="2" stroke-opacity="0.6" />
+    <line x1="480" y1="420" x2="380" y2="140" stroke="#C47B52" stroke-width="2" stroke-opacity="0.6" />
+    <!-- Center Dashed Line -->
+    <line x1="300" y1="140" x2="300" y2="420" stroke="#77736D" stroke-width="2" stroke-dasharray="14 16" stroke-opacity="0.7" />
+
+    <!-- Pothole / Hazard Cluster 1 (Detected) -->
+    <g transform="translate(250, 310)">
+      <ellipse cx="0" cy="0" rx="36" ry="14" fill="#0D0D0D" stroke="#C47B52" stroke-width="1.5" />
+      <ellipse cx="-4" cy="2" rx="20" ry="7" fill="#000000" />
+      <!-- Scanning reticle -->
+      <circle cx="0" cy="0" r="32" fill="none" stroke="#C47B52" stroke-width="1" stroke-dasharray="4 4" opacity="0.8" />
+      <!-- Ping radar -->
+      <circle cx="0" cy="0" r="48" fill="none" stroke="#C47B52" stroke-width="1" opacity="0.3" />
+      <!-- Coordinate Callout -->
+      <line x1="32" y1="-8" x2="70" y2="-30" stroke="#C47B52" stroke-width="1" />
+      <line x1="70" y1="-30" x2="160" y2="-30" stroke="#C47B52" stroke-width="1" />
+      <rect x="70" y="-52" width="130" height="20" rx="4" fill="#181818" stroke="#292929" stroke-width="1" />
+      <text x="80" y="-38" font-family="'Plus Jakarta Sans', monospace" font-size="10" fill="#F4F1EA" font-weight="600">SEVERITY: HIGH // R-44</text>
+    </g>
+
+    <!-- Pothole / Hazard Cluster 2 (Secondary) -->
+    <g transform="translate(340, 210)">
+      <ellipse cx="0" cy="0" rx="18" ry="7" fill="#0A0A0A" stroke="#77736D" stroke-width="1" />
+      <circle cx="0" cy="0" r="22" fill="none" stroke="#C47B52" stroke-width="0.8" stroke-dasharray="2 3" opacity="0.5" />
+    </g>
+  </g>
+
+  <!-- Floating Telemetry HUD Overlay -->
+  <g transform="translate(40, 40)">
+    <!-- Header Card -->
+    <rect width="210" height="54" rx="8" fill="#141414" stroke="#292929" stroke-width="1" opacity="0.95" />
+    <circle cx="20" cy="27" r="4" fill="#C47B52" />
+    <text x="34" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#F4F1EA" letter-spacing="0.5">ROADTOK CIVIC HUD</text>
+    <text x="34" y="40" font-family="'Plus Jakarta Sans', monospace" font-size="10" fill="#A7A29A">GPS TRACKER: ACTIVE</text>
+  </g>
+
+  <!-- Metric Widget Card Right -->
+  <g transform="translate(560, 40)">
+    <rect width="200" height="96" rx="8" fill="#141414" stroke="#292929" stroke-width="1" opacity="0.95" />
+    <text x="20" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#77736D" letter-spacing="1">MAPPED HAZARDS</text>
+    <text x="20" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="700" fill="#F4F1EA">1,482<tspan font-size="14" fill="#C47B52" font-weight="500"> pts</tspan></text>
+    <text x="20" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#A7A29A">Synced with Cloud Firestore</text>
+  </g>
+
+  <!-- Bottom Map Coordinate Bar -->
+  <g transform="translate(40, 420)">
+    <rect width="720" height="44" rx="8" fill="#141414" stroke="#292929" stroke-width="1" />
+    <circle cx="24" cy="22" r="5" fill="none" stroke="#C47B52" stroke-width="2" />
+    <circle cx="24" cy="22" r="2" fill="#C47B52" />
+    <text x="42" y="26" font-family="'Plus Jakarta Sans', monospace" font-size="11" fill="#F4F1EA">LAT 18.5204° N, LNG 73.8567° E — GEO-FENCE: ACTIVE</text>
+    <text x="696" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#C47B52" font-weight="600" text-anchor="end">VERCEL EDGE VERIFIED</text>
+  </g>
+</svg>

@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 720" width="600" height="720">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="portraitGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#C47B52" stop-opacity="0.14" />
+      <stop offset="60%" stop-color="#141414" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0D0D0D" stop-opacity="1" />
+    </radialGradient>
+
+    <linearGradient id="copperRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C47B52" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#D28A5C" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#C47B52" stop-opacity="0.05" />
+    </linearGradient>
+
+    <linearGradient id="skinBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8E5E43" />
+      <stop offset="45%" stop-color="#7B4F37" />
+      <stop offset="100%" stop-color="#5E3B27" />
+    </linearGradient>
+
+    <linearGradient id="hairDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1F1E20" />
+      <stop offset="100%" stop-color="#0E0D0F" />
+    </linearGradient>
+
+    <linearGradient id="shirtDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1A1A" />
+      <stop offset="50%" stop-color="#141414" />
+      <stop offset="100%" stop-color="#0F0F0F" />
+    </linearGradient>
+
+    <filter id="subtleBlur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" />
+    </filter>
+  </defs>
+
+  <!-- Studio Dark Background -->
+  <rect width="600" height="720" rx="16" fill="url(#portraitGlow)" />
+  <rect width="600" height="720" rx="16" fill="none" stroke="#292929" stroke-width="1.5" />
+
+  <!-- Architectural Grid & Subtle Background Elements -->
+  <g opacity="0.18">
+    <circle cx="300" cy="310" r="230" fill="none" stroke="#C47B52" stroke-width="1" stroke-dasharray="3 6" />
+    <circle cx="300" cy="310" r="170" fill="none" stroke="url(#copperRing)" stroke-width="1.5" />
+    <line x1="300" y1="40" x2="300" y2="110" stroke="#C47B52" stroke-width="1" />
+    <line x1="300" y1="510" x2="300" y2="580" stroke="#C47B52" stroke-width="1" />
+    <line x1="70" y1="310" x2="140" y2="310" stroke="#C47B52" stroke-width="1" />
+    <line x1="460" y1="310" x2="530" y2="310" stroke="#C47B52" stroke-width="1" />
+    <circle cx="300" cy="80" r="3" fill="#C47B52" />
+    <circle cx="520" cy="310" r="3" fill="#C47B52" />
+    <circle cx="80" cy="310" r="3" fill="#C47B52" />
+  </g>
+
+  <!-- Architectural Spec Coordinates & Monogram -->
+  <g opacity="0.3" font-family="'Plus Jakarta Sans', monospace" font-size="10" fill="#A7A29A" letter-spacing="1">
+    <text x="36" y="52">NB // 19.0760° N, 72.8777° E</text>
+    <text x="564" y="52" text-anchor="end">DEV.OPS // BUILD</text>
+    <text x="36" y="688">PORTFOLIO.PORTRAIT.V2</text>
+    <text x="564" y="688" text-anchor="end">NILESH BAGUL</text>
+  </g>
+
+  <!-- Silhouette / Studio Portrait Composition: Indian Male, Young Professional, Dark Smart Casual -->
+  <g transform="translate(0, 10)">
+    <!-- Shoulders & Dark Shirt (Smart Casual Jacket / Dark Shirt) -->
+    <path d="M120 700 C130 570, 200 520, 260 500 L340 500 C400 520, 470 570, 480 700 Z" fill="url(#shirtDark)" stroke="#222222" stroke-width="1" />
+    
+    <!-- Collar & Shirt Layering -->
+    <path d="M260 500 L275 565 L300 590 L325 565 L340 500" fill="#111111" stroke="#292929" stroke-width="1" />
+    <!-- Subtle Copper Lapel Pin -->
+    <circle cx="252" cy="545" r="3" fill="#C47B52" />
+    <path d="M252 548 L250 562" stroke="#C47B52" stroke-width="1.2" opacity="0.7" />
+
+    <!-- Neck & Studio Rim Light -->
+    <path d="M265 440 L265 520 Q300 535 335 520 L335 440 Z" fill="#6D432E" />
+    <path d="M330 445 L332 515" stroke="#C47B52" stroke-width="1.5" opacity="0.35" filter="url(#subtleBlur)" />
+
+    <!-- Head & Jawline -->
+    <path d="M225 310 C225 210, 375 210, 375 310 C375 380, 355 450, 300 460 C245 450, 225 380, 225 310 Z" fill="url(#skinBase)" />
+
+    <!-- Studio Side Lighting Highlights on Face -->
+    <path d="M365 260 C372 300, 368 360, 345 420 C332 445, 315 456, 300 458" fill="none" stroke="#C47B52" stroke-width="3" opacity="0.25" filter="url(#subtleBlur)" />
+
+    <!-- Ears -->
+    <ellipse cx="223" cy="325" rx="10" ry="19" fill="#6A402B" />
+    <ellipse cx="377" cy="325" rx="10" ry="19" fill="#6A402B" />
+
+    <!-- Groomed Hair (Clean Modern Professional Pompadour/Crop) -->
+    <path d="M218 290 C215 230, 240 180, 300 178 C360 176, 385 220, 382 290 C382 295, 370 240, 340 220 C310 200, 270 205, 235 240 C225 250, 220 270, 218 290 Z" fill="url(#hairDark)" />
+    <!-- Hair Volume & Texture -->
+    <path d="M228 235 C250 185, 320 180, 370 215 C350 200, 305 190, 255 210 C240 216, 232 225, 228 235 Z" fill="#2B2A2D" opacity="0.6" />
+
+    <!-- Eyebrows (Neat, Natural) -->
+    <path d="M245 288 Q265 282 285 288" stroke="#181719" stroke-width="4.5" stroke-linecap="round" fill="none" />
+    <path d="M315 288 Q335 282 355 288" stroke="#181719" stroke-width="4.5" stroke-linecap="round" fill="none" />
+
+    <!-- Eyes (Focused, Confident) -->
+    <path d="M250 305 Q265 298 280 305 Q265 312 250 305 Z" fill="#F4F1EA" opacity="0.9" />
+    <circle cx="266" cy="305" r="5" fill="#2A1B14" />
+    <circle cx="267" cy="304" r="1.5" fill="#FFFFFF" />
+
+    <path d="M320 305 Q335 298 350 305 Q335 312 320 305 Z" fill="#F4F1EA" opacity="0.9" />
+    <circle cx="334" cy="305" r="5" fill="#2A1B14" />
+    <circle cx="335" cy="304" r="1.5" fill="#FFFFFF" />
+
+    <!-- Refined Nose Bridge -->
+    <path d="M298 295 L297 348 Q290 355 286 358 L314 358 Q310 355 303 348 Z" fill="#663C27" />
+    <path d="M290 357 Q300 361 310 357" stroke="#4A2B1B" stroke-width="1.8" fill="none" />
+
+    <!-- Gentle, Confident Smile -->
+    <path d="M272 388 Q300 404 328 388" stroke="#3F2215" stroke-width="2.8" stroke-linecap="round" fill="none" />
+    <path d="M276 392 Q300 404 324 392" stroke="#8E523A" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.5" />
+
+    <!-- Well-groomed subtle stubble/beard contour -->
+    <path d="M236 345 C236 415, 270 448, 300 450 C330 448, 364 415, 364 345 C355 375, 335 435, 300 435 C265 435, 245 375, 236 345 Z" fill="#1C1816" opacity="0.25" />
+  </g>
+
+  <!-- Bottom Vignette Fade to Seamlessly Blend into Cards -->
+  <rect x="0" y="620" width="600" height="100" fill="url(#bottomFade)" />
+  <defs>
+    <linearGradient id="bottomFade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0D0D0D" stop-opacity="0" />
+      <stop offset="100%" stop-color="#0D0D0D" stop-opacity="1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Replaceable Badge Indicator Tag in Corner -->
+  <g transform="translate(36, 638)">
+    <rect width="180" height="34" rx="6" fill="#141414" stroke="#292929" stroke-width="1" />
+    <circle cx="16" cy="17" r="4" fill="#C47B52" />
+    <text x="28" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#F4F1EA" letter-spacing="0.5">NILESH BAGUL</text>
+    <text x="110" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#77736D" letter-spacing="0.5">/ PORTRAIT</text>
+  </g>
+</svg>

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <radialGradient id="newsGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#C47B52" stop-opacity="0.10" />
+      <stop offset="60%" stop-color="#141414" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0E0E0E" stop-opacity="1" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="500" fill="url(#newsGlow)" />
+  <rect width="800" height="500" fill="none" stroke="#292929" stroke-width="1.5" />
+
+  <!-- Platform Header with Multilingual Switcher -->
+  <g transform="translate(40, 36)">
+    <rect width="720" height="56" rx="8" fill="#141414" stroke="#292929" stroke-width="1" />
+    <circle cx="24" cy="28" r="4" fill="#C47B52" />
+    <text x="38" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#F4F1EA" letter-spacing="0.5">NEWS PLATFORM</text>
+    <text x="38" y="42" font-family="'Plus Jakarta Sans', monospace" font-size="10" fill="#77736D">MOBILE-FIRST CMS ENGINE</text>
+
+    <!-- Language Selector Pill -->
+    <g transform="translate(520, 13)">
+      <rect width="180" height="30" rx="15" fill="#1C1C1C" stroke="#292929" stroke-width="1" />
+      <!-- Selected Lang (Marathi / Regional) -->
+      <rect x="2" y="2" width="56" height="26" rx="13" fill="#C47B52" />
+      <text x="30" y="19" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">मराठी</text>
+      <text x="90" y="19" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#A7A29A" text-anchor="middle">ENG</text>
+      <text x="146" y="19" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#A7A29A" text-anchor="middle">हिंदी</text>
+    </g>
+  </g>
+
+  <!-- Mobile-first Dual Screen / Feed Mockup -->
+  <g transform="translate(40, 114)">
+    <!-- Main Editorial Lead Article Card -->
+    <g transform="translate(0, 0)">
+      <rect width="450" height="280" rx="8" fill="#161616" stroke="#292929" stroke-width="1" />
+      
+      <!-- Category Tag -->
+      <rect x="24" y="24" width="90" height="22" rx="4" fill="#222222" stroke="#2E2E2E" stroke-width="1" />
+      <text x="69" y="39" font-family="'Plus Jakarta Sans', monospace" font-size="10" fill="#C47B52" font-weight="600" text-anchor="middle">TECHNOLOGY</text>
+      
+      <text x="125" y="39" font-family="'Plus Jakarta Sans', monospace" font-size="10" fill="#77736D">2 MIN READ • BREAKING</text>
+
+      <!-- Headline -->
+      <text x="24" y="86" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="700" fill="#F4F1EA">
+        Next-Generation Mobile Publishing
+      </text>
+      <text x="24" y="114" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="700" fill="#F4F1EA">
+        Built for Speed, Reach and Accessibility
+      </text>
+
+      <!-- Snippet Body -->
+      <text x="24" y="152" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#A7A29A">
+        Providing decentralized and instant multilingual news distribution with
+      </text>
+      <text x="24" y="172" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#A7A29A">
+        real-time Firebase synchronization and low-bandwidth optimizations.
+      </text>
+
+      <!-- Editorial Metadata -->
+      <line x1="24" y1="210" x2="426" y2="210" stroke="#242424" stroke-width="1" />
+      <circle cx="36" cy="242" r="12" fill="#292929" />
+      <text x="36" y="246" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#C47B52" text-anchor="middle" font-weight="700">NB</text>
+      <text x="56" y="240" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#F4F1EA">Editorial Desk</text>
+      <text x="56" y="254" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#77736D">Verified Author • CMS Pipeline</text>
+      
+      <!-- Live Sync status -->
+      <rect x="340" y="230" width="86" height="24" rx="4" fill="#1C1C1C" stroke="#292929" stroke-width="1" />
+      <text x="383" y="246" font-family="'Plus Jakarta Sans', monospace" font-size="10" fill="#C47B52" text-anchor="middle">PUBLISHED</text>
+    </g>
+
+    <!-- Side Mobile Column Cards -->
+    <g transform="translate(470, 0)">
+      <!-- Item 1 -->
+      <rect width="250" height="84" rx="6" fill="#161616" stroke="#292929" stroke-width="1" />
+      <text x="16" y="24" font-family="'Plus Jakarta Sans', monospace" font-size="9" fill="#C47B52">LOCAL INFRASTRUCTURE</text>
+      <text x="16" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" fill="#F4F1EA">Regional Metro Expansion</text>
+      <text x="16" y="62" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#77736D">Updated 14m ago</text>
+
+      <!-- Item 2 -->
+      <g transform="translate(0, 98)">
+        <rect width="250" height="84" rx="6" fill="#161616" stroke="#292929" stroke-width="1" />
+        <text x="16" y="24" font-family="'Plus Jakarta Sans', monospace" font-size="9" fill="#C47B52">ECOLOGY</text>
+        <text x="16" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" fill="#F4F1EA">Monsoon Preparedness Report</text>
+        <text x="16" y="62" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#77736D">Updated 1h ago</text>
+      </g>
+
+      <!-- Item 3 -->
+      <g transform="translate(0, 196)">
+        <rect width="250" height="84" rx="6" fill="#161616" stroke="#292929" stroke-width="1" />
+        <text x="16" y="24" font-family="'Plus Jakarta Sans', monospace" font-size="9" fill="#C47B52">EDUCATION</text>
+        <text x="16" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" fill="#F4F1EA">Tech Skilling in Rural Hubs</text>
+        <text x="16" y="62" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#77736D">Updated 3h ago</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Bar -->
+  <g transform="translate(40, 420)">
+    <rect width="720" height="42" rx="8" fill="#141414" stroke="#292929" stroke-width="1" />
+    <text x="20" y="26" font-family="'Plus Jakarta Sans', monospace" font-size="11" fill="#A7A29A">REACT + FIREBASE ARCHITECTURE // MULTILINGUAL STATIC GENERATION</text>
+    <text x="700" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#C47B52" font-weight="600" text-anchor="end">PRODUCTION PREVIEW</text>
+  </g>
+</svg>

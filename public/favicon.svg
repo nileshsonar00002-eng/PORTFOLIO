@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <rect width="128" height="128" rx="28" fill="#141414" stroke="#292929" stroke-width="4"/>
+  <rect x="8" y="8" width="112" height="112" rx="22" fill="#0D0D0D" />
+  <circle cx="64" cy="64" r="48" fill="none" stroke="#C47B52" stroke-width="1.5" stroke-dasharray="4 8" opacity="0.4"/>
+  <text x="64" y="78" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="44" font-weight="700" fill="#F4F1EA" text-anchor="middle" letter-spacing="-1.5">
+    N<tspan fill="#C47B52">B</tspan>
+  </text>
+  <circle cx="94" cy="74" r="3.5" fill="#C47B52"/>
+</svg>

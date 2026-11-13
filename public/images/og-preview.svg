@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#0D0D0D"/>
+  <rect x="40" y="40" width="1120" height="550" rx="16" fill="#141414" stroke="#292929" stroke-width="2"/>
+  <circle cx="950" cy="315" r="240" fill="#C47B52" opacity="0.08"/>
+  <circle cx="950" cy="315" r="160" fill="none" stroke="#C47B52" stroke-width="1.5" stroke-dasharray="6 8" opacity="0.3"/>
+  <g transform="translate(100, 180)">
+    <rect width="240" height="34" rx="6" fill="#1F1A17" stroke="#3D291F" stroke-width="1"/>
+    <text x="16" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#C47B52" letter-spacing="1.5">ASPIRING DEVOPS ENGINEER</text>
+    <text x="0" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="52" font-weight="800" fill="#F4F1EA">NILESH BAGUL</text>
+    <text x="0" y="140" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="500" fill="#A7A29A">I build digital products that solve <tspan fill="#C47B52">real problems.</tspan></text>
+    <text x="0" y="195" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" fill="#77736D">AI-assisted developer • React • Firebase • Cloud Infrastructure</text>
+  </g>
+</svg>
