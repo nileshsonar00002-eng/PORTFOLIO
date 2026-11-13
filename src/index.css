@@ -1,19 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --bg-base: #FFFFFF;
-  --bg-surface: #F9F7F4;
-  --bg-card: #FFFFFF;
-  --bg-elevated: #F2ECE3;
-  --bg-hover: #F6F1EA;
-  --text-primary: #151413;
-  --text-secondary: #575149;
-  --text-muted: #887F74;
-  --border-subtle: #E6E0D6;
-  --border-hover: #D0C7BB;
+  --bg-base: #F7F5F0;        /* Premium warm off-white / alabaster */
+  --bg-surface: #EFEAE1;     /* Subtle warm ivory surface */
+  --bg-card: #FFFFFF;        /* Crisp elevated white cards */
+  --bg-elevated: #EDE7DC;
+  --bg-hover: #F2ECE2;
+  --text-primary: #151413;   /* Deep warm charcoal */
+  --text-secondary: #58524A; /* Refined slate brown */
+  --text-muted: #888075;     /* Soft muted text */
+  --border-subtle: #E2DBD0;  /* Delicate warm border */
+  --border-hover: #CFC6B8;
   --accent-copper: #B8673B;
-  --accent-hover: #A0552B;
-  --nav-bg: rgba(255, 255, 255, 0.92);
+  --accent-hover: #9E5329;
+  --nav-bg: rgba(247, 245, 240, 0.92);
   --modal-bg: #FFFFFF;
   --modal-overlay: rgba(20, 19, 18, 0.55);
   --card-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
