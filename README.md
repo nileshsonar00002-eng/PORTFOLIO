@@ -64,7 +64,7 @@ Each project has structured metadata in `projects`:
   longDescription: '...',
   image: '/images/roadtok.svg',
   technologies: ['Firebase', 'Firestore', 'JavaScript', 'Google Maps API', 'Vercel'],
-  liveUrl: 'https://roadtok.vercel.app',
+  liveUrl: 'https://www.roadtok.in/',
   githubUrl: 'https://github.com/nileshbagul/roadtok',
   highlights: [ ... ],
 }

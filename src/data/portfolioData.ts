@@ -79,7 +79,7 @@ export const projects: Project[] = [
     image: '/images/roadtok.svg',
     imageAlt: 'RoadTok road hazard and pothole reporting platform visual interface',
     technologies: ['Firebase', 'Firestore', 'JavaScript', 'Google Maps API', 'Vercel'],
-    liveUrl: 'https://roadtok.vercel.app',
+    liveUrl: 'https://www.roadtok.in/',
     githubUrl: 'https://github.com/nileshbagul/roadtok',
     highlights: [
       'Interactive geospatial pinpoints and coordinate clustering with Google Maps API',
@@ -98,7 +98,7 @@ export const projects: Project[] = [
     image: '/images/sahyadri.svg',
     imageAlt: 'SAVE SAHYADRI environmental conservation platform visual interface',
     technologies: ['Web', 'Firebase', 'Interactive UI', 'Deployment'],
-    liveUrl: 'https://savesahyadri.org',
+    liveUrl: 'https://www.savesahyadri.online/',
     githubUrl: 'https://github.com/nileshbagul/save-sahyadri',
     highlights: [
       'Interactive ecological storytelling and biodiversity exploration modules',
