@@ -34,7 +34,7 @@ export const personalInfo: PersonalInfo = {
 export const socialLinks: SocialLink[] = [
   {
     name: 'GitHub',
-    url: 'https://github.com/nileshbagul',
+    url: 'https://github.com/nileshsonar00002-eng',
     ariaLabel: 'Nilesh Bagul on GitHub (opens in new tab)',
     icon: 'github',
   },
@@ -82,7 +82,7 @@ export const projects: Project[] = [
     logoAlt: 'RoadTok Official Logo',
     technologies: ['Firebase', 'Firestore', 'JavaScript', 'Google Maps API', 'Vercel'],
     liveUrl: 'https://www.roadtok.in/',
-    githubUrl: 'https://github.com/nileshbagul/roadtok',
+    githubUrl: 'https://github.com/nileshsonar00002-eng/gaddhemeparty',
     highlights: [
       'Interactive geospatial pinpoints and coordinate clustering with Google Maps API',
       'Real-time pothole submission database synced with Cloud Firestore',
@@ -103,7 +103,7 @@ export const projects: Project[] = [
     logoAlt: 'SAVE SAHYADRI Official Logo',
     technologies: ['Web', 'Firebase', 'Interactive UI', 'Deployment'],
     liveUrl: 'https://www.savesahyadri.online/',
-    githubUrl: 'https://github.com/nileshbagul/save-sahyadri',
+    githubUrl: 'https://github.com/nileshsonar00002-eng/save-the-sahyadri',
     highlights: [
       'Interactive ecological storytelling and biodiversity exploration modules',
       'Community participation forms for reporting illegal dumping or forest degradation',
@@ -124,7 +124,7 @@ export const projects: Project[] = [
     logoAlt: 'quitzZ Official App Logo',
     technologies: ['Firebase', 'AI', 'JavaScript', 'App UI'],
     liveUrl: 'https://quitzz-web.vercel.app/',
-    githubUrl: 'https://github.com/nileshbagul/quitzz',
+    githubUrl: 'https://github.com/nileshsonar00002-eng/quitzz-web',
     highlights: [
       'Dynamic health recovery milestones calculated from cessation timestamp',
       'Real-time financial savings calculator based on custom consumption metrics',
