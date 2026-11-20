@@ -114,10 +114,10 @@ export const projects: Project[] = [
   },
   {
     id: 'quitzz',
-    title: 'Quitzz',
+    title: 'quitzZ',
     category: 'Health & Lifestyle App',
     description: 'A modern smoke-free journey application designed around motivation, progress tracking and interactive experiences.',
-    longDescription: 'Quitzz transforms smoking cessation into a measurable, rewarding, and supportive journey. By combining milestone achievements, financial savings calculators, and physiological recovery timelines with intelligent streak monitoring, it keeps users engaged during crucial habit transitions.',
+    longDescription: 'quitzZ transforms smoking cessation into a measurable, rewarding, and supportive journey. By combining milestone achievements, financial savings calculators, and physiological recovery timelines with intelligent streak monitoring, it keeps users engaged during crucial habit transitions.',
     image: '/images/quitzz-live.png',
     imageAlt: 'quitzZ smoke-free application interface showing real-time biological recovery and progress tracking',
     logo: '/images/quitzz-logo.png',
