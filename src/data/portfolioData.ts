@@ -123,7 +123,7 @@ export const projects: Project[] = [
     logo: '/images/quitzz-logo.png',
     logoAlt: 'quitzZ Official App Logo',
     technologies: ['Firebase', 'AI', 'JavaScript', 'App UI'],
-    liveUrl: 'https://quitzz-app.web.app',
+    liveUrl: 'https://quitzz-web.vercel.app/',
     githubUrl: 'https://github.com/nileshbagul/quitzz',
     highlights: [
       'Dynamic health recovery milestones calculated from cessation timestamp',
