@@ -52,13 +52,22 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
           <X className="w-5 h-5" />
         </button>
 
-        {/* Category & Title */}
+        {/* Category & Title with Official Logo */}
         <div className="flex items-center space-x-2 text-xs font-mono uppercase tracking-widest text-[var(--accent-copper)] mb-2">
           <span>{project.category}</span>
         </div>
-        <h2 id="modal-project-title" className="text-2xl sm:text-3xl font-bold tracking-tight mb-4 text-[var(--text-primary)]">
-          {project.title}
-        </h2>
+        <div className="flex items-center space-x-3.5 mb-4">
+          {project.logo && (
+            <img
+              src={project.logo}
+              alt={project.logoAlt || `${project.title} logo`}
+              className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl object-contain bg-[var(--bg-surface)] border border-[var(--border-subtle)] p-1.5 shadow-xs flex-shrink-0"
+            />
+          )}
+          <h2 id="modal-project-title" className="text-2xl sm:text-3xl font-bold tracking-tight text-[var(--text-primary)]">
+            {project.title}
+          </h2>
+        </div>
 
         {/* Project Visual Media */}
         <div className="relative w-full aspect-video rounded-lg overflow-hidden border border-[var(--border-subtle)] mb-6 bg-[var(--bg-surface)]">

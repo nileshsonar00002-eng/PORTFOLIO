@@ -40,10 +40,20 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect }) =
       {/* Card Content */}
       <div className="flex flex-col flex-1 p-6 sm:p-7 justify-between">
         <div>
-          {/* Project Title */}
-          <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-[var(--text-primary)] group-hover:text-[var(--accent-copper)] transition-colors mb-2.5">
-            {project.title}
-          </h3>
+          {/* Project Title & Official Logo */}
+          <div className="flex items-center space-x-3 mb-3">
+            {project.logo && (
+              <img
+                src={project.logo}
+                alt={project.logoAlt || `${project.title} logo`}
+                loading="lazy"
+                className="w-9 h-9 rounded-lg object-contain bg-[var(--bg-surface)] border border-[var(--border-subtle)] p-1 shadow-xs flex-shrink-0"
+              />
+            )}
+            <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-[var(--text-primary)] group-hover:text-[var(--accent-copper)] transition-colors">
+              {project.title}
+            </h3>
+          </div>
 
           {/* Description */}
           <p className="text-sm text-[var(--text-secondary)] leading-relaxed mb-5">
